@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>http://www.thrivesmart.com/</loc>
+  <priority>0.8</priority>
+  <lastmod>2007-10-09T00:24:15+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.thrivesmart.com/about/</loc>
+  <priority>0.5</priority>
+  <lastmod>2007-10-09T00:24:15+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.thrivesmart.com/sprout/</loc>
+  <priority>0.8</priority>
+  <lastmod>2007-10-09T00:24:15+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.thrivesmart.com/sprout/terms.html</loc>
+  <priority>0.1</priority>
+  <lastmod>2007-10-09T00:24:15+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.thrivesmart.com/terms.html</loc>
+  <priority>0.1</priority>
+  <lastmod>2007-10-09T00:24:15+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.thrivesmart.com/privacy.html</loc>
+  <priority>0.1</priority>
+  <lastmod>2007-10-09T00:24:15+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.thrivesmart.com/about/contact.html</loc>
+  <priority>0.5</priority>
+  <lastmod>2007-10-09T00:24:15+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.thrivesmart.com/index.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2007-10-09T00:24:15+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.thrivesmart.com/sprout/san-francisco-website-writing-photos.html</loc>
+  <priority>0.5</priority>
+  <lastmod>2007-10-09T00:24:15+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.thrivesmart.com/sprout/custom-domains-and-email.html</loc>
+  <priority>0.5</priority>
+  <lastmod>2007-10-09T00:24:15+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.thrivesmart.com/privacy-faq.html</loc>
+  <priority>0.1</priority>
+  <lastmod>2007-10-09T00:24:15+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+</urlset>

@@ -1,0 +1,299 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+  background: #412509 url(../www-images/box_layout/ptn-dl-23-brn.png);
+  height: 100%;
+}
+
+.inside{
+  width: 500px;
+	margin:0px auto;
+	padding:0 18px 0 18px;
+}
+/* -- box bg -- */
+
+#header, 
+#content {
+  background-image: url(../www-images/box_layout/box-bg.png);
+  background-repeat: repeat-y;
+  background-position: top center;
+}
+
+#ts_header {
+  display: none;
+}
+#navigation {
+  display: none;
+}
+
+/* -- header -- */
+
+#header {
+  margin-top: 100px;
+}
+
+#header .outer {
+  background-image:url(../www-images/box_layout/box-top.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-top: 20px;
+}
+
+#header .inside {
+  text-align: center;
+}
+
+#header .lining {
+  padding-top: 10px;
+  background: #fff url(../www-images/grd-v-61-gry.png) repeat-x;
+}
+
+/* -- navigation -- */
+
+#navigation #container {
+	width:100%;
+}
+
+#navigation a {
+  color: #99ccff;
+}
+
+#navigation .inside {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-top:3px solid #29568B;
+}
+/* -- content -- */
+
+#content .inside #liquid{
+	margin:0 auto;
+  padding:24px 18px 0 18px;
+	background-color: #fff;
+/*  background:transparent url(www-images/bg_cont_inside.jpg) no-repeat center top;*/
+}
+
+
+#content .inside #liquid .lining {
+   border-bottom: 1px solid white;
+}
+#content .inside #liquid .lining .content {
+  line-height: 1.5em;
+}
+
+/* -- footer content -- */
+
+#footer {
+  background-image:url(../www-images/box_layout/box-btm.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  clear: both;
+  color: #eee;
+  padding-top: 55px;
+  text-align: center;
+}
+
+#footer .inside a{
+	color:#fff;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+#footer .logo {
+  font-size: 60%;
+}
+
+#footer .logo .logo-right .text,
+#footer .logo .logo-left .text {
+  margin-top: 10px;
+}
+
+
+#footer .logo .logo-img img {
+  height: 55px;
+}
+
+#footer .inside a:hover{
+	color:#fff;
+	text-decoration:none;
+}
+
+#footer .l_insignia {
+  font-size: 120%;
+}
+
+#ts_footer .links {
+  font-size: 80%;
+}
+
+#ts_footer .copyright {
+  font-size: 80%;
+  margin: 1em;
+  color: #a2866b;
+}
+
+#ts_footer .catch {
+  font-size: 70%;
+  margin-bottom: 1em;
+  color: #a2866b;
+} 
+#ts_footer .logo {
+    font-size: 90%;
+    color: #a2866b;
+}
+/* -- end elements edit -- */
+
+
+form {
+  margin: 0px;
+  padding: 0px;
+}
+
+label {
+  color: #327dc7;
+  display: block;
+  font-weight: bold;
+  font-size: 80%;
+  margin-top: 2px;
+  margin-bottom: 15px;
+}
+
+label .hint {
+  font-size: 80%;
+  color: #553b21;
+  margin-left: 10px;
+}
+
+
+.submit {
+  text-align: right;
+}
+
+.input-default {
+  width: 99%;
+  color: #412509;
+  padding: 4px;
+  border: 1px solid #75a7d9;
+  background: #fff url(../www-images/shd-ul-800-blu.png) no-repeat;
+  font-weight: bold;
+}
+
+.input-submit {
+  background: #694d33 url(../www-images/grd-v-25-brn.png) repeat-x;
+  color: #fff;
+  font-size: 110%;
+  padding: 5px;
+  border: 3px solid #412509;
+  cursor: pointer;
+  letter-spacing: -1px;
+}
+
+a {
+  color: #185fb2;
+}
+
+a:hover {
+  background-color: #185fb2;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0px;
+  padding: 0px;
+  font-weight: normal;
+}
+
+
+.clearfix {
+  clear: both;
+  visibility: hidden;
+  font-size: 1px;
+  line-height: 1px;
+}
+
+
+#header h1 {
+  letter-spacing: -1px;	
+}
+#header h2 {
+  color:#ff8a00;
+  letter-spacing: -1px;
+}
+
+.simple {
+  width: 99%;
+}
+.supporting {
+  font-size: 90%;
+  float: left;
+  padding-top: 10px;
+  padding-right: 20px;
+  width: 180px !important;
+  width /**/: 180px;
+  text-align: center;
+  border-right: 1px solid #eee;
+}
+
+.supporting a {
+  font-weight: bold;
+}
+
+.primary {
+  margin-left: 230px;
+  padding-right: 10px;
+  width: 210px;
+  width /**/: 224px;
+}
+
+.notice {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.notice .msg {
+  padding: 5px 10px 5px 10px;
+  background-color: #FFE3AB;
+  font-size: 80%;
+}
+
+/* -- active errors -- */
+
+#errorExplanation ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.fieldWithErrors {
+	display: inline;
+}
+
+.fieldWithErrors .input-default {
+  border: 1px solid #a30101;
+  background: #fff url(../www-images/shd-ul-800-red.png) no-repeat;
+}
+
+#errorExplanation {
+	border-bottom: 1px dashed #ffc8c8;
+	padding-bottom: 8px;
+	margin-bottom: 10px;
+}
+
+#errorExplanation h2 {
+	display: none;
+}
+
+#errorExplanation p {
+	display: none;
+}
+
+#errorExplanation ul li {
+  list-style: none;
+	color: #c00;
+	font-weight: bold;
+	font-size: 85%;
+}

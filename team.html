@@ -1,0 +1,128 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>ThriveSmart | Revamping in Progress</title>
+  <link href="./www-stylesheets/thrivesmart_mini.css?v=0.02" media="screen" rel="Stylesheet" type="text/css" />
+  <script src="./www-javascripts/prototype.js?v=0.02" type="text/javascript"></script>
+  <script src="./www-javascripts/effects.js?v=0.02" type="text/javascript"></script>
+  
+  <style>
+  .team #ts_hdr_nav .team a {
+    text-decoration: none;
+    color: #64A8F1;
+  }
+  
+  #l_content_inner img {
+    cursor:pointer;
+  }
+  
+  #l_content_inner {
+    text-align: center;
+  }
+  
+  
+  #l_content_inner div {
+    display: block;
+    text-align: center;
+      margin-bottom: 30px;
+  }
+  </style>
+</head>
+<body class="team">
+
+
+<div id="l_outer_body">
+<div id="l_inner_body">
+
+<div id="l_main" class="logged_out">
+
+  <div id="ts_hdr">
+    <div id="ts_hdr_outer">
+
+    <div id="ts_hdr_inner">
+      <div id="ts_hdr_nav">
+        <ul>
+          <li class="home"><a href="/">Home</a></li>
+          <li class="team"><a href="team.html">Team</a></li>
+        </ul>
+
+      </div>
+      <h1><b>Thrive</b>Smart</h1>
+    </div>
+    </div>
+  </div>
+  
+  <div id="l_title">
+    <div id="l_title_inner">
+	    
+
+  <h1>Triumvirate</h1>
+
+  <h2>The 3 Co-Founders</h2>
+    </div>
+  </div>
+  
+  <div id="l_nav">
+    <div id="l_nav_inner">
+	    
+    </div>
+  </div>
+
+  <div id="l_content">
+    <div id="l_content_inner">
+      <div id="slot_0">
+        <img id="card_0" src="./www-images/corp/matt-card.png" style="display:hidden;" onclick="sh(this)"/>
+      </div>
+      <div id="slot_1">
+        <img id="card_1" src="./www-images/corp/jenn-card.png" style="display:hidden;" onclick="sh(this)"/>  
+      </div>
+      <div id="slot_2">
+        <img id="card_2" src="./www-images/corp/dan-card.png" style="display:hidden;" onclick="sh(this)"/>  
+      </div>
+
+        <script type="text/javascript"> 
+        var orders = [[0,1,2], [1,2,0], [2,1,0], [1,0,2],[2,0,1], [0,2,1]]
+        var cards = [$('card_0'), $('card_1'), $('card_2')]
+        var slots = [$('slot_0'), $('slot_1'), $('slot_2')]
+        var selected=orders[Math.floor(Math.random()*6)];
+        for (var i=0; i < cards.length; ++i) {
+          cards[i].remove();
+        }
+        for (var i=0; i < cards.length; ++i) {
+          slots[selected[i]].appendChild(cards[i]);
+          new Effect.Grow(cards[i]);
+          new Effect.Appear(cards[i]);
+        }
+        function sh(el) {
+          new Effect.Shake(el);
+        }
+        </script>
+	  </div>
+  </div>
+  
+  <div id="l_ftr">
+    <div id="l_ftr_inner">
+      
+	  </div>
+  </div>
+
+  <div id="ts_ftr">
+    
+    <div class="ts_ftr_info">
+      <div class="copyright">Copyright &copy; 2007 <b>Thrive</b>Smart, LLC. All Rights Reserved.</div>
+    </div>
+  </div>
+
+   
+</div>
+
+</div>
+</div>
+
+
+
+</body>
+</html>
+

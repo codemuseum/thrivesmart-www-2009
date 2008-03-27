@@ -1,0 +1,38 @@
+timezone_fu makes it really easy to deal with multiple timezones within a Rails Model.  The plugin-in assumes that there is a model attribute called timezone that can be used for conversion.
+
+In the model there is one method to enable this plugin-in: has_timezone.
+
+has_attachment(options = {})
+  This method takes the following hash options:
+    :fields => [ ]  # array of fields you would like converted to local time automatically.
+    :time_format => A string formatted for strftime (used by the display methods)
+    :default_timezone => What timezone you want to use for conversions (used if the model's timezone attribute is empty.)
+
+The plugin creates the following methods for each field passed in the fields array:
+  :field_name - accessor that returns the field value formatted in local time
+  :field_name=(val) - set the field's value to a time (in local time)
+  :utc_field_name - accessor that returns the field value formatted in UTC time.
+  
+Example Usage:
+
+  class Event < ActiveRecord::Base
+    has_timezone :fields => [ :start_datetime, :end_datetime]
+  end
+  
+  event = Event.find(:first)
+  => #<Event:0x1b71b40 @attributes={"end_datetime"=>"2007-11-21 15:00:00", "start_datetime"=>"2007-11-21 14:15:00", "timezone"=>"America/New_York"]
+  
+  >> event.start_datetime
+  => Wed Nov 21 09:15:00 UTC 2007
+  
+  >> event.display_start_datetime
+  => "Nov. 21, 2007 09:15 AM"
+  
+  >> event.utc_start_datetime
+  => Wed Nov 21 14:15:00 UTC 2007
+  
+  
+Change log:
+
+20071127: For date time pickers such as calendar_date_select added support for Date strings.
+20071126: added a nil check in the tz method to catch nil time zones.

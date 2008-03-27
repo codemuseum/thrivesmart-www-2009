@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>ThriveSmart - Makers of YouBook | Accept Appointments on Your Website!</title>
+<link rel="stylesheet" href="../www-stylesheets/thrivesmart.css" media="all"/>
+<script src="../www-javascripts/prototype.js" type="text/javascript"></script>
+<script src="../www-javascripts/effects.js" type="text/javascript"></script>
+
+</head>
+
+<body class="home">
+
+
+<div id="base_outer_body">
+<div id="base_inner_body">
+
+<div id="base_main">
+
+  <div id="base_hdr">
+    <div id="hdr_nav">
+      <ul>
+        <li class="home"><a href="/">Home</a></li>
+        <li class="about"><a href="corp/">About Us</a></li>
+        <li class="signup"><a href="javascript:void(0)" onclick="scrollToSignup()">Signup! <sup>free</sup></a></li>
+        <li class="login"><a href="/login">Login &raquo;</a></li>
+      </ul>
+    </div>
+    <h1><b>Thrive</b>Smart</h1>
+  </div>
+  
+  <div id="base_title">
+    <div id="base_sticker">&nbsp;</div>
+    <div class="screenshot"><img src="../www-images/yb-ss-title.png" /></div>
+    <h2>YouBook</h2>
+    <h3>The easiest way to <b>accept appointments online</b></h3>
+  </div>
+  
+  <div id="base_content">
+  
+    <div class="supporting">
+      <div class="testimonial">
+        <p>&quot;In our first month, we've had <b>700 patients</b> visit our YouBook page, and <b>300 appointments booked</b> online.  Our patients love the convenience&quot;</p>
+        <div class="quote-attr">
+          <div class="quote-logo"><img src="../www-images/caleyecare-logo.png" /></div>
+          <b>University of California, Berkeley</b>
+          <br />School of Optometry
+        </div>
+      </div>
+    </div>
+    
+    <div class="primary">
+      <h3>
+        YouBook can book &amp; cancel appointments, gather<br />
+        necessary customer information, and send <br />
+        out reminders online, in real-time - <br />
+        <b>all automatically</b>.
+      </h3>
+      
+      <div class="banner">
+        <h4><a href="/corp/youbook">Learn more</a> or <a href="javascript:void(0)" onclick="scrollToSignup()">sign up for free</a></h4>
+        <p>Signup and be using YouBook in minutes</p>
+      </div>
+      
+      
+      <div class="story">
+      
+        <p>When you sign up, YouBook creates an attractive web page where your customers can view your schedule and book appointments.  This great functionality is packed into an intuitive and easy-to-setup web application - <a href="javascript:void(0);" onclick="scrollToSignup()">sign up</a> and get the solution you've been waiting for.</p>
+    
+      </div>
+    
+    </div>
+    
+    <div class="clearfix">&nbsp;</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="steps">
+      <h3>Just 3 Simple Steps</h3>
+      <div class="steps-grid">
+        <div class="step">
+          <div class="screenshot"><img src="../www-images/signup-ss.png" /></div>
+          <h4>Sign Up</h4>
+          <p>Just a couple of questions, and you’re on your way.  <a href="javascript:void(0)" onclick="scrollToSignup()">Get Started Now &raquo;</a></p>
+        </div>
+        <div class="step">
+          <div class="screenshot"><img src="../www-images/signup-ss.png" /></div>
+          <h4>Input Your Schedule</h4>
+          <p>Fill in your business hours, or a custom schedule that matches your specific needs!</p>
+        </div>
+        <div class="step">
+          <div class="screenshot"><img src="../www-images/signup-ss.png" /></div>
+          <h4>Get Appointments!</h4>
+          <p>Your customers can click from your web site to make an appointment.</p>
+        </div>
+        
+        <div class="clearfix">&nbsp;</div>
+      </div>
+    </div>
+    
+    <div class="steps-hr">&nbsp;</div>
+        
+    <div class="go" id="signup_go">
+      <h3>Get started. No Obligation. It's easy!</h3>
+      <div class="form">
+        <form action="/businesses" method="post">
+          <div class="business-info">
+            <input id="business_name" name="business[name]" size="30" type="text" value=""  class="input-default"/>
+            <label for="business_name">Business Name</label>
+          </div>
+
+          <div class="account-info">
+            <div class="user-exists">
+              <div class="prompt">Do you have a ThriveSmart Account?</div> 
+                <input name="user_radio" type="radio" id="user_is_new" value="new_user" checked="checked" onchange="is_existing_user()">
+                <label for="user_is_new"><a href="javascript:void(0)" onclick="makeChecked('user_is_new')">Nope / Not Sure</a></label>
+                <input type="radio" name="user_radio" value="existing_user" id="user_is_existing" onchange="is_existing_user()"> <label for="user_is_existing"><a href="javascript:void(0)" onclick="makeChecked('user_is_existing')">Yes!</a></label>
+            </div>
+          
+
+            <div id="new_user_data">
+
+              <input id="user_email" name="user[email]" size="30" type="text" class="input-default" />
+              <label for="user_email">Email Address</label>
+
+              <div class="password-grid">
+                <div class="password1">
+                  <div>
+                    <input id="user_password" name="user[password]" size="30" type="password" class="input-default" />
+                    <label for="user_password">Password <span class="hint">4+ characters, please!</span></label>
+                  </div>
+                </div>
+                <div class="password2">
+                  <div>
+                    <input id="user_password_confirmation" name="user[password_confirmation]" size="30" type="password" class="input-default" />
+                    <label for="user_password_confirmation">Confirm Password</label>
+                  </div>
+                </div>
+            
+                <div class="clearfix">&nbsp;</div>
+              </div>
+            
+              <div class="user-name-grid">
+                <div class="first-name">
+                  <div>
+                    <input id="user_first_name" name="user[first_name]" size="30" type="text" class="input-default" />
+                    <label for="user_first_name">First Name</label>
+                  </div>
+                </div>
+
+                <div class="middle-name">
+                  <div>
+                    <input id="user_middle_name" name="user[middle_name]" size="30" type="text" class="input-default" />
+                    <label for="user_middle_name">Middle</label>
+                  </div>
+                </div>
+
+                <div class="last-name">
+                  <div>
+                    <input id="user_last_name" name="user[last_name]" size="30" type="text" class="input-default" />
+                    <label for="user_last_name">Last</label>
+                  </div>
+                </div>
+       
+                <div class="clearfix">&nbsp;</div>
+              </div>
+
+            </div>
+
+
+            <div id="existing_user_data" style="display:none">
+
+              <input id="login_email" name="email" size="30" type="text" class="input-default" />
+              <label for="login_email">Email (login)</label>
+
+              <input id="login_password" name="password" size="30" type="password" class="input-default" />
+              <label for="login_password">Password</label>
+
+            </div>
+            
+          </div>
+          
+		  <div class="terms">
+		    By signing up, you agree to the <a href="TODO">Terms and Conditions</a>.
+		  </div>
+		
+          <div class="submit">
+            <input type="submit" value="Agree &amp; Sign Up &raquo;" class="input-submit" />
+          </div>
+        </form>
+        
+        
+<script type="text/javascript">
+//<![CDATA[
+function is_existing_user() {
+  if (! $('user_is_new').checked) {
+    $('new_user_data').hide();
+	$('existing_user_data').show();
+	setTimeout("$('login_email').focus()", 200);
+  }
+  else {
+	$('existing_user_data').hide();
+    $('new_user_data').show();
+	setTimeout("$('user_email').focus()", 200);
+  }
+}
+
+function makeChecked(el) {
+  $(el).checked = true;
+  $(el).onchange();
+}
+
+function scrollToSignup() {
+  new Effect.ScrollTo('signup_go', {offset: -25});
+  setTimeout("$('business_name').focus()", 200);
+}
+
+
+//]]>
+</script>
+      </div>
+    </div>
+    
+  </div>
+  
+  <div id="base_ftr">
+    <div class="links">
+      <a href="/corp/about/">About Us</a>
+      | <a href="/corp/terms.html">Terms of Use</a>
+      | <a href="/corp/privacy.html">Privacy Policy</a>
+      | <a href="/corp/about/contact.html">Contact Us</a>
+      | <a href="/login">Login &raquo;</a></div>
+    <div class="copyright">Copyright &copy; 2007 <b>Thrive</b>Smart, LLC. All Rights Reserved.</div>
+     
+     
+    <div id="base_insignia">
+      <div class="logo"><b>Thrive</b>Smart</div>
+      <div class="catch">connecting businesses and customers</div>
+    </div>
+
+     
+  </div>
+   
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
